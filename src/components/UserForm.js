@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import formUserDetails from './FormUserDetails';
+import FormUserDetails from './FormUserDetails';
 
 export class UserForm extends Component {
     state = {
@@ -38,7 +38,7 @@ export class UserForm extends Component {
         const values = { firstName, lastName, email, occupation, city, bio  }
         switch(step) {
             case 1: return (
-                <formUserDetails 
+                <FormUserDetails 
                     nextStep={this.nextStep}
                     handleFieldChange={this.handleFieldChange}
                     values={values}
